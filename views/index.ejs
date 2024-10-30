@@ -1,0 +1,884 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title>PROWESS SOLAR</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="Keywords" content="Websites creation" />
+  <meta name="author" content="Oyekanmi Oyetunji" />
+  <meta name="refresh" content="30" />
+
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <script src="https://kit.fontawesome.com/40c559f4dd.js"></script>
+
+  <!-- Fontawesome icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!--CSS-->
+  <!-- load bootstrap and our own personal stylesheet -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="public/js/a.js"></script>
+  <!--ICONS-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+  <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+
+
+
+  <!--Next, link AOS styles and scripts:-->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--Google Fonts:-->
+
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css" />
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--Next, link AOS styles and scripts:
+
+<link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+
+<script src="bower_components/aos/dist/aos.js"></script>-->
+
+  <!--AngularJs scripts-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+  <!-- Google reCAPTCHA CDN -->
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+  <!--nav for both mobile and desktop-->
+
+  <nav class="navbar navbar-expand-md sticky-top navbar1">
+
+    <div class="container-fluid">
+
+
+
+      <a class="navbar-brand" href="https://prowess.infotechcrush.com">
+
+
+        <!--<img src="jelil.jpg" alt="Logo" style="width:40px;" class="rounded-pill">-->
+        <p class="h2 logo" id="logo" style="color:white" target="_self">PROWESS</p>
+
+      </a>
+
+
+
+
+
+
+      <div class="clearfix" style="color:white;">
+        <span id="lblGreetings" class="float-start"></span>
+        <!--<span onclick="darkMode()">dark</span>-->
+      </div>
+
+
+
+
+      <!--Mobile Menu Background Color-->
+
+      <div class="offcanvas offcanvas-start sideMobileMenu" id="sideBar">
+
+        <div class="offcanvas-header mobileMenuAdjust">
+
+
+          <h1 class="offcanvas-title" id="mobileMenuHeading">PROWESS</h1>
+
+          <!--cancel button-->
+          <div id="mobileMenuButton1">
+            <p class="closebtn" type="button" style="display: hidden;" data-bs-dismiss="offcanvas"> &times;
+            </p>
+          </div>
+
+
+
+          <!--Mobile Menu-->
+
+          <div class="" id="mobileMenu">
+
+
+
+            <ul class="offcanvas-body mobileNav">
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://prowess.infotechcrush.com" target="_self">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://prowess.infotechcrush.com" target="_self">About Us</a>
+              </li>
+
+              <!--<li class="nav-item dropdown-toggle btn btn-primary" data-bs-toggle="dropdown">
+              <a class="nav-link dropdown-menu" href="#">Services</a>
+            </li>-->
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://prowess.infotechcrush.com" target="_self">Contact Us</a>
+              </li>
+
+
+
+              <div class="r">
+                <li class="tooltip2">
+
+                  <label class="label" for="touch"><span class="plusSign">Our Products</span></label>
+                  <input type="checkbox" id="touch">
+
+                  <ul class="plusSignMenu">
+
+                    <li><a>Inverters</a></li>
+                    <li><a>Solar Panels</a></li>
+                    <li><a>Solar Charge Controllers</a></li>
+                    <li><a>Batteries</a></li>
+                    <li><a>Automatic Change Over</a></li>
+                    <li><a>And Other Related Accessories</a></li>
+
+                  </ul>
+                  <!--<span class="tooltiptext">Tooltip text</span>-->
+                </li>
+              </div>
+
+
+
+
+
+
+
+
+
+            </ul>
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+        <!--Desktop Menu-->
+
+        <ul class="collapse navbar-collapse justify-content-end desktopNav">
+
+
+
+
+
+
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://prowess.infotechcrush.com" target="_self">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about" target="_self">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" target="_self">Contact Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="dropbtn">Our Products</a>
+            <div class="dropdown-content">
+              <a class="nav-link list-group-item">Solar Panels</a>
+              <a class="nav-link list-group-item">Solar Charge Controllers</a>
+              <a class="nav-link list-group-item">Batteries</a>
+              <a class="nav-link list-group-item">Automatic Change Over</a>
+              <a class="nav-link list-group-item">And Other Related Accessories</a>
+            </div>
+          </li>
+
+
+
+
+
+
+
+
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <!--mobile menu button-->
+
+      <div class="sideButton">
+        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideBar">
+          <div class="barsContainer" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </button>
+      </div>
+
+
+
+    </div>
+
+  </nav>
+
+
+
+
+
+
+
+
+  <div class="header container-fluid">
+
+    <div class=" text-white h-150">
+      <span class="display-6 typewriting1">Embrace Solar Power: The Solution to Unreliable Electricity and Rising Fuel Costs</span>
+
+      <!--<span class="display-6" style="color:red">InfoTechCrush</span>-->
+
+      <p class="typewriting2" id="typedtext"></p>
+
+      <button onclick="window.location.href='#about';" class="btn btn-outline-secondary aboutUs">Services
+        rendered</button>
+
+    </div>
+
+
+  </div>
+
+
+
+
+  <section class="container-fluid  servicesDescription">
+
+    <span id="about"></span>
+
+    <div class="row" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+      data-aos-once="true">
+
+
+      <div class="shadow-lg p-4 col-sm-5 mt-3">
+        <h2>The Services We Render</h2>
+
+        <p>
+          At Prowess Power, we offer:
+        </p>
+
+
+        <ol class="ourServices">
+          <li href="#">Energy Auditing</li>
+          <li href="#">Residential Installation</li>
+          <li href="#">Commercial Installation</li>
+          <li href="#">Solar Battery Backup</li>
+          <li href="#">Solar Street/Flood Light</li>
+          <li href="#">Solar Setup Upgrade</li>
+          <li href="#">Solar Setup Trouble Shooting</li>
+          <li href="#">Proposal and Cost Benefit Analysis</li>
+        </ol>
+
+
+        <p><button onclick="window.location.href='#otherServices';" type="button"
+            class="btn btn-outline-secondary readMoreServices">
+            More services
+          </button>
+        </p>
+      </div>
+
+      <div class="servicesDescription2 shadow-lg p-4 col-sm-3 mt-3 bg-light" data-aos="zoom-in" data-aos-duration="1500"
+        data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <h2>Why Solar Power?</h2>
+
+
+            <ol class="ourServices">
+
+              <li href="#">Guaranteed Uninterrupted Power Supply: Generate your own electricity, free from grid dependence.</li>
+              <li href="#">Reduce Energy Costs: Lower your electricity bills by up to 95%.</li>
+              <li href="#">Energy Independence: Break free from fuel price volatility.</li>
+              <li href="#">Environmental Benefits: Reduce carbon footprint and contribute to a sustainable future.</li>
+              <li href="#">Low Maintenance: Solar systems require minimal upkeep.</li>
+
+            </ol>
+
+
+      </div>
+
+      <div class="servicesDescription2 shadow-lg p-4 col-sm-3 mt-3 bg-light" data-aos="zoom-in" data-aos-duration="1500"
+        data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <h2>Benefits for Homes and Offices</h2>
+
+        <ol class="ourServices">
+        <li href="#">Power critical appliances during outages.</li>
+        <li href="#">Increase property value.</li>
+        <li href="#">Enhance business productivity.</li>
+        <li href="#">Enjoy significant savings on energy bills.</li>
+        <li href="#">Contribute to a greener environment.</li>
+        </ol>
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="row availability" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+      data-aos-once="true">
+
+      <div class="p-4 col-sm-5 mt-3">
+
+
+
+
+      </div>
+
+      <div class="servicesDescription2 shadow-lg p-4 col-sm-3 bg-light mt-3">
+
+        <h2>Solar System Solutions</h2>
+
+            <ol class="ourServices">
+            <li href="#">Residential Solar Systems (2-10 kW)</li>
+            <li href="#">Commercial Solar Systems (10-50 kW)</li>
+            <li href="#">Industrial Solar Systems (50-100 kW)</li>
+            <li href="#">Hybrid Solar Systems (Solar + Inverter)</li>
+            <li href="#">Solar Water Pumping Systems</li>
+          </ol>
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+  </section>
+
+
+
+  <section class="container-fluid  servicesDescription">
+
+    <span id="otherServices"></span>
+
+    <div class="row" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic"
+      data-aos-once="true">
+
+
+      <div class="shadow-lg p-4 col-sm-5 mt-3">
+        <h2>Other Services We Render</h2>
+
+        <p>
+          Turn Your Old, Scrap, Unused or leftover Inverter Batteries Into Cash!
+        </p>
+
+        <p>Accepted Battery Types:</p>
+
+        <ol class="ourServices">
+
+          <li href="#">220ah Tubular Battery</li>
+          <li href="#">200ah Dry Cell Battery</li>
+          <li href="#">150ah Dry Cell Battery</li>
+          <li href="#">100ah Dry Cell Battery</li>
+
+        </ol>
+
+
+
+      </div>
+
+      <div class="servicesDescription2 shadow-lg p-4 col-sm-3 mt-3 bg-light" data-aos="zoom-in" data-aos-duration="1500"
+        data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <h2>How It Works</h2>
+
+
+            <ol class="ourServices">
+
+              <li href="#">Contact us with battery details(type, quantity, condition)</li>
+              <li href="#">Receive a price quote</li>
+              <li href="#">Schedule a pickup</li>
+              <li href="#">Get paid instantly!</li>
+
+            </ol>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Go to The Top Button -->
+
+  <button onclick="topFunction()" class="float" id="goToTheTopButton" title="Go to top">
+
+    <i class="arrow2 up"></i><span style="font-size: 13px;">TOP</span>
+
+  </button>
+
+
+
+
+
+
+  <form method="POST" action="/form" id="myForm" autocomplete="on" class="container-fluid mt-2"
+    ng-app="myApp" ng-controller="validateCtrl" name="myForm" data-aos="zoom-in-right" data-aos-duration="1500"
+    data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+    <span id="contact"></span>
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="text-white p-5 bg-dark" ;>
+
+          <p>Contact Us</p>
+
+          <p>Phone:
+            <a style="color:#009999">0705 647 1438 (Lagos/Ogun state) or 0703 078 6761 (Ibadan/Oyo state)</a>
+          </p>
+          <p>Email: <a style="color:#009999">support@infotechcrush.com</a></p>
+          <p>
+            Address: <a style="color:#009999">
+              Shop 2, Km 7, Idiroko Road, Beside Optima Filling Station, Iyana, Ota, Ogun state or
+              Oki, Olodo Area, Ibadan, Oyo State.
+            </a>
+          </p>
+
+
+        </div>
+
+        <div class="">
+
+
+
+          <div class="row" style="margin-top: 50px; margin-left: 2px; width: 100%;">
+
+
+
+
+
+
+          </div>
+
+
+
+          <div class="col-sm">
+
+            <div>
+
+
+            </div>
+
+            <!--<div class="attachment-wrapper">
+        <label for="attachment">Attachment</label>
+        <input id="attachment" name="attachment" type="file" required/>
+      </div>-->
+
+            <!--<div class="g-recaptcha" style="margin-top: 20px" data-sitekey="6LeIgrIpAAAAAMJtmfUb24MCmJr9EnJ5QYoGx1MM">
+            </div>-->
+
+            <!--<div style="color:yellow; margin-top: 0" id="recaptchaerr"></div>-->
+
+
+
+
+            <!--<button type="submit" class="btn submitButton"  id="clickToDisable1"
+           style="margin-top: 25px; margin-bottom: 25px;"
+           ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid"
+           onclick="disbleOnclick()">
+           Submit
+          </button>-->
+
+          </div>
+          <!--<div><p id="clickToDisable" style="display: none;">sent, Thank You</p></div>-->
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="m p-4 text-white text-center footerAll" style="margin-top: -50px">
+
+
+
+
+      <!--Footer -->
+
+
+      <div class="footerLarge footerSection"  id="aaa">
+
+        <div>Our profiles on social media:</div>
+
+        <!--<a href="https://www.linkedin.com/in/OyekanmiOyetunji/" target="_self"><i
+            class="fa fa-linkedin footerOpacity"></i></a>
+        <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i
+            class="fa fa-facebook-official footerOpacity"></i></a>-->
+
+
+      </div>
+
+      <p><!--&copy; Copyright 2023 <br/>-->
+        <!--<span>Built by</span>-->
+        <a class="footerLast" href="https://prowess.infotechcrush.com" title="jelil-info" target="_self">
+          © 2024 PROWESS Ltd, all rights reserved.
+        </a>
+      </p>
+
+
+
+      <!--<p id="width"></p>-->
+
+
+
+
+
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    //recaptcha
+    document.getElementById('myForm').addEventListener('submit', function (e) {
+      if (grecaptcha.getResponse() == "") {
+        e.preventDefault();
+        document.getElementById("recaptchaerr").innerHTML = 'Please select captcha';
+      } else {
+
+        //replacing button onsubmit
+        document.getElementById("recaptchaerr").innerHTML = 'Thank you for sending';
+        var newElement = document.createElement('p');
+        newElement.textContent = 'The form has been submitted.';
+        var oldElement = document.getElementById('clickToDisable1');
+        oldElement.replaceWith(newElement);
+        //document.getElementById("clickToDisable1").addEventListener("click", (e) => { e.preventDefault() });
+        //document.getElementById("myForm").reset();
+        /*var button = document.getElementById('myButton');
+        var oldValue = button.value;
+        var isDisabled = true;
+
+        button.disabled = isDisabled;
+
+        setTimeout(function() {
+            button.value = oldValue;
+            button.disabled = !isDisabled;
+        }, 3000);*/
+      }
+    });
+
+//replacing button onsubmit
+          /*function replaceElement() {
+             var newElement = document.createElement('p');
+             newElement.textContent = 'The form has been submitted.';
+             var oldElement = document.getElementById('clickToDisable1');
+             oldElement.replaceWith(newElement);
+         }*/
+
+
+    //typewrite
+
+    var TxtType = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+      document.body.appendChild(css);
+    };
+
+
+    //code for animation
+    TweenLite.to(".rectangle", 5, {
+      backgroundColor: "#000000",
+      color: "red",
+      ease: Power4.easeIn
+    });
+    AOS.init();
+
+    //code for form validation
+
+    var app = angular.module('myApp', []);
+    app.controller('validateCtrl', function ($scope) {
+      $scope.user = '';
+      $scope.email = '';
+    });
+
+    /*function disbleOnclick() {
+      document.getElementById("clickToDisable").style.display = "block";
+      document.getElementById("clickToDisable1").style.display = "none";
+
+
+      clickToDisable1
+      //document.getElementById("clickToDisable").innerHTML = "nonnnnne"
+    };*/
+
+
+    //code for good morning
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+      greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+      greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+      greet = 'Good Evening';
+
+    document.getElementById('lblGreetings').innerHTML =
+      '<b>' + greet + '</b> ';
+
+
+    // Button appears when scroll
+
+    let mybutton = document.getElementById("goToTheTopButton");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+
+
+
+    // set up text to print, each item in array is new line
+    var aText = new Array(
+      "In today's era of skyrocketing fuel prices and erratic electricity supply, harnessing solar energy is the smartest decision for homeowners and businesses.",
+
+
+    );
+    var iSpeed = 100; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+
+    function typewriter() {
+      sContents = ' ';
+      iRow = Math.max(0, iIndex - iScrollAt);
+      var destination = document.getElementById("typedtext");
+
+      while (iRow < iIndex) {
+        sContents += aText[iRow++] + '<br />';
+      }
+      destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+      if (iTextPos++ == iArrLength) {
+        iTextPos = 0;
+        iIndex++;
+        if (iIndex != aText.length) {
+          iArrLength = aText[iIndex].length;
+          setTimeout("typewriter()", 500);
+        }
+      } else {
+        setTimeout("typewriter()", iSpeed);
+      }
+    }
+
+
+    typewriter();
+
+    //Dark Mode Button
+    /*function darkMode() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }*/
+
+
+
+    /*Click on the Menu Icon to transform it to "X"*/
+
+    /*function myFunction(x) {
+      x.classList.toggle("change");
+    }*/
+
+    //Width setting
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    var x = document.getElementById("width");
+    x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
+
+
+
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>

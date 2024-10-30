@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html  lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title>BMLS</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="Keywords" content="InfoTechCrush, The home of building from ground up"/>
+  <meta name="author" content="Oyekanmi Oyetunji"/>
+  <meta name="refresh" content="30"/>
+
+
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <script src="https://kit.fontawesome.com/40c559f4dd.js"></script>
+
+  <!--CSS-->
+	<!-- load bootstrap and our own personal stylesheet -->
+
+	<link rel="stylesheet" href="css/style.css">
+  <script src="public/js/a.js"></script>
+   <!--ICONS-->
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+   <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+
+
+
+<!--Next, link AOS styles and scripts:-->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!--Google Fonts:-->
+
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css"/>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--Next, link AOS styles and scripts:
+
+<link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+
+<script src="bower_components/aos/dist/aos.js"></script>-->
+
+<!--AngularJs scripts-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+<!--nav for both mobile and desktop-->
+
+<nav class="navbar navbar-expand-md sticky-top navbar1">
+
+  <div class="container-fluid">
+
+
+
+    <a class="navbar-brand" href="https://bmls.com.ng/">
+
+
+      <!--<img src="jelil.jpg" alt="Logo" style="width:40px;" class="rounded-pill">-->
+      <p class="h2 logo" id="logo" style="color:white" target="_self">BMLS</p>
+
+    </a>
+
+
+
+
+
+
+    <div class="clearfix" style="color:white;">
+      <span id="lblGreetings" class="float-start"></span>
+      <!--<span onclick="darkMode()">dark</span>-->
+    </div>
+
+
+
+
+    <!--Mobile Menu Background Color-->
+
+    <div class="offcanvas offcanvas-start sideMobileMenu" id="sideBar">
+
+      <div class="offcanvas-header mobileMenuAdjust">
+
+
+        <h1 class="offcanvas-title" id="mobileMenuHeading">BMLS</h1>
+
+        <!--cancel button-->
+        <div id="mobileMenuButton1">
+          <p class="closebtn" type="button" style="display: hidden;" data-bs-dismiss="offcanvas"> &times;
+          </p>
+        </div>
+
+
+
+        <!--Mobile Menu-->
+
+        <div class="" id="mobileMenu">
+
+
+
+          <ul class="offcanvas-body mobileNav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://bmls.com.ng/" target="_self">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about" target="_self">About</a>
+            </li>
+
+            <!--<li class="nav-item dropdown-toggle btn btn-primary" data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-menu" href="#">Services</a>
+          </li>-->
+
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio" target="_self">Products</a>
+            </li>
+
+
+
+            <div class="r">
+              <li class="tooltip2">
+
+                <label class="label" for="touch"><span class="plusSign">Services</span></label>
+                <input type="checkbox" id="touch">
+
+                <ul class="plusSignMenu">
+
+                  <li><a href="https://bmls.com.ng/" target="_self">Our Services</a></li>
+                  <li><a>Installation and training</a></li>
+                  <li><a>Maintenance and repair</a></li>
+                  <li><a>Technical support</a></li>
+                  <li><a>Laboratory Consulting</a></li>
+
+                </ul>
+                <!--<span class="tooltiptext">Tooltip text</span>-->
+              </li>
+            </div>
+
+
+
+
+
+
+
+            <li class="nav-item">
+              <a class="nav-link ContactMobile" href="https://bmls.com.ng/" target="_self">Contact</a>
+            </li>
+
+          </ul>
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <!--Desktop Menu-->
+
+      <ul class="collapse navbar-collapse justify-content-end desktopNav">
+
+
+
+
+
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://bmls.com.ng/" target="_self">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/about" target="_self">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/portfolio" target="_self">Products</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Services<i class="arrow1 down1"></i></a>
+          <div class="dropdown-content">
+            <a class="nav-link list-group-item" href="#otherServices" target="_self">our Services</a>
+            <a class="nav-link list-group-item">Installation and training</a>
+            <a class="nav-link list-group-item">Maintenance and repair</a>
+            <a class="nav-link list-group-item">Technical support</a>
+            <a class="nav-link list-group-item">Laboratory Consulting</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" target="_self">Contact</a>
+        </li>
+
+
+
+
+        <!--<li class="nav-item">
+
+
+          <a href="https://github.com/jelil-info" target="_self"><i class="nav-link fa fa-github footerOpacity"></i></a>
+          <a href="https://www.linkedin.com/in/OyekanmiOyetunji/" target="_self"><i class="nav-link fa fa-linkedin footerOpacity"></i></a>
+          <a href="https://www.facebook.com/oyekanmi.jalil" target="_self"><i class="nav-link fa fa-facebook-official footerOpacity"></i></a>
+          <a href="https://www.instagram.com/jelil_info/" target="_self"><i class="nav-link fa fa-instagram footerOpacity"></i></a>
+          <a href="https://www.twitter.com"><i class="nav-link fa fa-twitter footerOpacity" target="_self"></i></a>
+
+        </li>-->
+
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!--mobile menu button-->
+
+    <div class="sideButton">
+      <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideBar">
+        <div class="barsContainer" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+    </div>
+
+
+
+  </div>
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container-fluid mt-4 projectsOffer">
+
+  <span id="portfolio"></span>
+
+  <div class="col-8 projectContainer bg-warning p-4">
+    <h1 class="mx-auto projects">More Products</h1>
+
+
+
+
+
+    <div class="row">
+
+      <div class="col-sm bg-success m-sm-4 m-1 p-3 portfolio" style="width:350px;" ; data-aos="zoom-in"
+        data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+        <h2 class="Headingproject">Non Vacutainer EDTA Bottle</h2>
+        <p class="p-1">
+          The Non Vacutainer EDTA Bottle is a commonly used blood collection tube in medical laboratories.
+          It contains ethylenediaminetetraacetic acid (EDTA), a chelating agent that binds to calcium ions in the blood, preventing blood clotting.
+        </p>
+        <img src="/vacutainer.jpg" alt="vacutainer" width="300px" height="430px" class="imagePortfolio">
+        <p class="btn btn-success mt-3 justify-content-center">Non Vacutainer EDTA Bottle<br><b>₦3000 per pack</b></p>
+      </div>
+
+
+
+      <div class="col-sm bg-secondary m-sm-4 m-1 p-3 portfolio" style="width: 350px" data-aos="zoom-in"
+        data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+        <h2 class="Headingproject">Urinalysis Strip</h2>
+        <p class="p-1">
+          A urinalysis strip, also known as a dipstick or urine test strip, is a diagnostic tool used to rapidly screen urine samples for a variety of conditions.
+          It's a simple and convenient way to detect abnormalities in the urine that can indicate underlying health issues.
+        </p>
+        <img src="/urinalysis.jpg" alt="urinalysis" width="300px" height="430px" class="imagePortfolio">
+        <p class="btn btn-success mt-3 justify-content-center">Urinalysis Strip<br><b>₦8000 per pack</b></p>
+      </div>
+
+      <div class="col-sm bg-success m-sm-4 m-1 p-3 portfolio" style="width: 350px" data-aos="zoom-in"
+        data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+
+        <h2 class="Headingproject">Hiv Strip</h2>
+        <p class="p-1">
+          HIV rapid test strips are a convenient and confidential way to screen for HIV infection. These tests are designed to provide results within minutes and can be performed in a variety of settings, including healthcare facilities, community centers, and even at home.
+        </p>
+        <img src="/hivStrip.jpg" alt="hivStrip" width="300px" height="430px" class="imagePortfolio">
+        <p class="btn btn-success mt-3 justify-content-center">Ripped Skinny Jeans<br><b>₦5000 per pack</b></p>
+      </div>
+
+
+
+
+
+    </div>
+
+    <div data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out-cubic" data-aos-once="true">
+      <a href="/portfolio" class="mx-auto seeMoreProjects  btn btn-outline-secondary mt-3 justify-content-center">
+        View More Products
+      </a>
+    </div>
+
+  </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form method="POST" action="/form" id="myForm" autocomplete="on" target="_blank"
+class="container-fluid mt-3" ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
+
+
+
+
+  <div class="m p-4 text-white text-center footerAll">
+
+
+
+
+    <!--Footer -->
+
+
+    <div class="footerLarge footerSection" id="aaa">
+
+      <div>Our profiles on socia medial:</div>
+      <a href="https://www.facebook.com/profile.php?id=61565195223497&mibextid=ZbWKwL" target="_self"><i
+          class="fa fa-facebook-official footerOpacity"></i></a>
+      <a href="https://www.instagram.com/bmls82?utm_source=qr&igsh=MXM2ZGMxN3pxMWhkdw==" target="_self"><i class="fa fa-instagram footerOpacity"></i></a>
+
+
+    </div>
+
+    <p>&copy; Copyright 2024 <br/>
+
+      <a class="footerLast" href="#home" title="jelil-info" target="_blank">
+        © 2024 BMLS Ltd, all rights reserved.
+      </a>
+    </p>
+
+
+
+
+
+</div>
+
+</form>
+
+
+
+
+
+
+
+
+
+<script>
+//code for animation
+  TweenLite.to(".rectangle", 5, {
+    backgroundColor: "#000000",
+    color:"red",
+    ease: Power4.easeIn
+  });
+  AOS.init();
+
+
+
+  //code for good morning
+  var myDate = new Date();
+      var hrs = myDate.getHours();
+
+      var greet;
+
+      if (hrs < 12)
+          greet = 'Good Morning';
+      else if (hrs >= 12 && hrs <= 17)
+          greet = 'Good Afternoon';
+      else if (hrs >= 17 && hrs <= 24)
+          greet = 'Good Evening';
+
+      document.getElementById('lblGreetings').innerHTML =
+          '<b>' + greet + '</b> ';
+
+
+// Button appears when scroll
+
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
+//Dark Mode Button
+/*function darkMode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}*/
+
+
+
+/*Click on the Menu Icon to transform it to "X"*/
+
+/*function myFunction(x) {
+  x.classList.toggle("change");
+}*/
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
